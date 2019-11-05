@@ -1,0 +1,19 @@
+{
+    "name"              : "folio",
+    "releases_url"      : "https://github.com/laraone/folio-theme-releases/raw/master/releases.json",
+    "download_url"      : "https://github.com/laraone/folio-theme-releases/releases/download",
+    "namespace"         : "com.reimaginedworks.folio",
+    "folder"            : "folio",
+    "tags"              : [ "minimalistic", "clean", "modern", "blog" ],
+    "author"            : "Reimagined Works",
+    "org"               : "Reimagined Works",
+    "version"           : "1.0.0",
+    "description"       : "Folio is a simple portfolio theme.",
+    "url"               : "www.laraone.com",
+    "screenshots"       : 2,
+    "views-path"        : "folio",
+    "asset-path"        : "themes/folio",
+    "settings": [
+
+    ]
+}
