@@ -1,2 +1,18 @@
 @import "node_modules/normalize-scss/sass/normalize";
 @include normalize();
+
+body {
+    overflow-x: hidden;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    color: $body-text-color;
+    line-height: 25px;
+    height: 100%;
+}
+
+.folio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}

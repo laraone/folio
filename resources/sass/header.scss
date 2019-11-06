@@ -1,0 +1,177 @@
+header {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        padding-left: 100px;
+
+        .logo-link {
+            color: $logo-text-color;
+            font-size: $logo-text-size;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    #navigation {
+        padding-right: 100px;
+    }
+    @media (max-width: $medium-devices) {
+        #navigation {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $medium-devices) {
+    header {
+        .logo {
+            padding-left: 50px;
+        }
+        .hamburger-button-wrapper {
+            padding-right: 50px;
+        }
+    }
+}
+
+
+#navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .menu-item, .drop-menu-item {
+        a {
+            color: #222;
+            text-decoration: none;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 5px 12px;
+            font-weight: 600;
+        }
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block !important;
+    }
+    .drop-menu-item {
+        a {
+            padding: 7px 20px;
+        }
+    }
+
+    .dropdown {
+        &:hover {
+            .dropdown-content {
+                display: inline-block;
+            }
+        }
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 100px;
+        height: max-content;
+        background-color: #eef2f4;
+        padding: 12px 0px;
+        z-index: 90000;
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        user-select: none;
+
+        i {
+            color: $menu-text-color;
+            font-size: $menu-item-font-size;
+            cursor: pointer;
+            padding: 0px;
+        }
+
+        a {
+            font-size: $menu-item-font-size;
+            color: $menu-text-color;
+            text-transform: $menu-item-text-transform;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+
+            &:hover {
+                color: $menu-item-text-hover-color;
+            }
+
+            i {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.nav-active {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0px 20px 0px;
+    margin-right: 0px !important;
+}
+
+.header-active {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0px;
+    background-color: $mobile-header-bg;
+    .logo-link, .menu-item > a, .menu-item > a > i {
+        color: $mobile-header-color !important;
+    }
+    .logo {
+        padding: 20px 0px 30px 0px;
+        padding-left: 0px;
+    }
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after,
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: $mobile-header-color;
+    }
+    .dropdown-content {
+        position: relative !important;
+    }
+    .hamburger-button-wrapper {
+        display: block;
+        justify-content: center;
+        padding-right: 0px;
+    }
+    #navigation {
+        padding-right: 0px;
+    }
+}
+
+.hamburger-button-wrapper {
+    display: none;
+    padding-top: 5px;
+
+    @media (max-width: $medium-devices) {
+        display: block;
+    }
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: $menu-text-color;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: $menu-text-color;
+}
+
+.hamburger {
+    outline: none !important;
+    color: $menu-text-color !important;
+}

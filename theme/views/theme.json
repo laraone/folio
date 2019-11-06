@@ -14,6 +14,106 @@
     "views-path"        : "folio",
     "asset-path"        : "themes/folio",
     "settings": [
-
+        {
+            "label": "Resources",
+            "key": "resources",
+            "type": "section",
+            "settings": [
+                {
+                    "label": "Fonts",
+                    "key": "fonts",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Font Source",
+                            "key": "source-1",
+                            "default": "https://fonts.googleapis.com/css?family=Nunito&display=swap",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Css",
+                    "key": "css",
+                    "type": "section",
+                    "meta": { "hidden": true },
+                    "settings": [
+                        {
+                            "label": "Source",
+                            "key": "icons",
+                            "default": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        },
+                        {
+                            "label": "Source",
+                            "key": "popup",
+                            "default": "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css",
+                            "type": "string",
+                            "meta": { "uiType": "inputDisabled" }
+                        },
+                        {
+                            "label": "Source",
+                            "key": "animatecss",
+                            "default": "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css",
+                            "type": "string",
+                            "meta": { "uiType": "inputDisabled" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Javascript",
+                    "key": "javascript",
+                    "type": "section",
+                    "meta": { "hidden": true },
+                    "settings": [
+                        {
+                            "label": "Source",
+                            "key": "jquery",
+                            "default": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
+                            "type": "string",
+                            "meta": { "uiType": "inputDisabled" }
+                        },
+                        {
+                            "label": "Source",
+                            "key": "magnific-popup",
+                            "default": "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js",
+                            "type": "string",
+                            "meta": { "uiType": "inputDisabled" }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Css",
+            "key": "css",
+            "type": "section",
+            "settings": [
+                {
+                    "label": "Custom Css",
+                    "key": "customCss",
+                    "default": "",
+                    "type": "string",
+                    "meta": { "uiType": "textArea" }
+                }
+            ]
+        },
+        {
+            "label": "Menu Locations",
+            "key": "menuLocations",
+            "type": "section",
+            "meta": { "hidden": true },
+            "settings": [
+                {
+                    "label": "Header",
+                    "key": "header",
+                    "default": "Header",
+                    "type": "string",
+                    "meta": { }
+                }
+            ]
+        }
     ]
 }

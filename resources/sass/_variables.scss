@@ -21,39 +21,30 @@ $headline5-size: 20px;
 $headline6-size: 15px;
 $headlines-line-height: 45px;
 
-$sidebar-bg: #262930;
 $content-bg: #fff;
 
+$mobile-header-bg: #333;
+$mobile-header-color: #fff;
+
 // Logo
-$logo-text-color: #fff;
+$logo-text-color: #333;
 $logo-text-size: 32px;
 
 // Tagline
-$tagline-text-color: #e4e4e4;
+$tagline-text-color: #333;
 $tagline-font-size: 14px;
 
-// Sidebar Menu
-$menu-text-color: #fff;
-$menu-item-text-hover-color: #bdc7da;
-$menu-item-font-size: 18px;
-$menu-item-padding: 10px 0;
+// Navigation Menu
+$menu-text-color: #333;
+$menu-item-text-hover-color: rgb(95, 95, 95);
+$menu-item-font-size: 11px;
+// $menu-item-padding: 10px 0;
 $menu-item-text-transform: uppercase;
-
-// Drop Down Menu
 $menu-dropdown-item-padding: 5px 0 5px 20px;
 $menu-dropdown-item-text-transform: none;
 
-// Social Icon
-$social-icon-color: #fff;
-$social-icon-hover-color: #cbd5e0;
-$social-icon-font-size: 1.5rem;
-
 // Footer
-$footer-text-color: #eceef2;
-
-// Widgets
-$widget-post-title-link-color: #ececec;
-$widget-post-date-color: #b1b1b1;
+$footer-text-color: #333;
 
 $post-featured-image-height: 400px;
 $post-featured-image-height-large-devices: 350px;
