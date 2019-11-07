@@ -7,7 +7,9 @@
 <body>
 <div class="folio" id="app">
     @include('includes/header')
-    @yield('content')
+    <div class="container content-{{$pageType}}">
+        @yield('content')
+    </div>
     @include('includes/footer')
 </div>
 

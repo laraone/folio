@@ -3,11 +3,15 @@ header {
     height: 120px;
     justify-content: space-between;
     align-items: center;
+    max-width: 1500px;
+    width: 85%;
+    @media (max-width: $large-devices) {
+        width: 90%;
+    }
     .logo {
         display: flex;
         justify-content: center;
         padding: 15px 0;
-        padding-left: 100px;
 
         .logo-link {
             color: $logo-text-color;
@@ -16,27 +20,12 @@ header {
             font-weight: 600;
         }
     }
-    #navigation {
-        padding-right: 100px;
-    }
     @media (max-width: $medium-devices) {
         #navigation {
             display: none;
         }
     }
 }
-
-@media (max-width: $medium-devices) {
-    header {
-        .logo {
-            padding-left: 50px;
-        }
-        .hamburger-button-wrapper {
-            padding-right: 50px;
-        }
-    }
-}
-
 
 #navigation {
     display: flex;
