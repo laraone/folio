@@ -4,10 +4,7 @@
     padding: 20px 100px;
     max-width: 1500px;
     margin: 0 auto;
-}
-
-@media (max-width: $large-devices) {
-    .content-single {
+    @media (max-width: $large-devices) {
         padding: 20px 0px;
     }
 }
@@ -21,9 +18,10 @@
     }
 
     div.post-featured-image {
-        height: 400px;
-        background-size: cover;
+        height: 700px;
         background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
     }
 
     .post-meta {
@@ -93,166 +91,47 @@
     }
 }
 
-//  Comments
+// Index/Taxonomy
 
-.load-comments-wrapper {
+.content-index {
+    width: 100%;
+    max-width: 100%;
+}
+
+.posts {
     display: flex;
-    justify-content: center;
-}
-
-.comments {
-    margin-top: 35px;
-
-    .spinner {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: -5px;
-        background: rgba(255, 255, 255, 0.11);
-        height: 100%;
-        align-items: center;
-        width: 100%;
-        align-self: center;
-    }
-
-    .lds-dual-ring {
-        display: flex;
-        width: 64px;
-        height: 64px;
-    }
-
-    .lds-dual-ring:after {
-        content: " ";
-        display: block;
-        width: 46px;
-        height: 46px;
-        margin: 1px;
-        border-radius: 50%;
-        border: 5px solid #cef;
-        border-color: #cef transparent #cef transparent;
-        animation: lds-dual-ring 1.2s linear infinite;
-    }
-
-    @keyframes lds-dual-ring {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-}
-
-.comment-box {
-    position: relative;
-    margin-top: 15px;
-
-    h3 {
-        margin-top: 0px;
-    }
-}
-
-.comment-form {
-    padding: 10px 0px;
-    font-size: 14px;
-
-    .comment-box-header {
-        margin-bottom: 10px;
-    }
-
-    .comment-data {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 10px;
-
+    .post {
+        flex: 1;
         @media (max-width: $medium-devices) {
-            display: block;
-        }
-
-        .comment-data-item {
-            flex-grow: 0;
-            flex-shrink: 0;
-            flex-basis: 33%;
-
-            @media (max-width: $medium-devices) {
-                margin-bottom: 10px;
-            }
+            flex-basis: 49%;
         }
     }
-
-    .comment-body {
-        margin-bottom: 10px;
-
-        textarea {
-            height: 120px;
-        }
-    }
-
-    .comment-btn {
-        display: flex;
-        justify-content: flex-end;
+    @media (max-width: $medium-devices) {
+        flex-wrap: wrap;
+        margin: 25px 0;
     }
 }
 
-.comment {
-    margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 20px;
-
-    .comment-header {
-        margin-bottom: 5px;
-    }
-
-    .comment-datetime {
-        font-size: 13px;
-    }
-
-    .comment-footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .comment-name {
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    .comment-author {
-        color: rgb(61, 120, 168);
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    .comment-member {
-        color: rgb(59, 109, 218);
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    .comment-reply {
-        align-self: flex-end;
-        cursor: pointer;
-        display: inline-block;
-        margin-right: 1.1em;
-        color: rgba(0,0,0,.4);
-        text-decoration: none;
-        font-size: 12px;
-    }
-
-    .comment-reply:hover {
-        color: rgba(0,0,0,.8);
-    }
-
-    .nested-comment {
-        padding-left: 30px;
-        margin-top: 5px;
-        margin-bottom: 20px;
+.index-featured-image {
+    height: 650px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    background-position: center;
+    .index-post-title {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        margin-bottom: 40px;
+        padding: 0px 5px;
+        width: fit-content;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 
-.nested-comment {
-    .comment {
-        margin-bottom: 15px;
-    }
+.index-image-link {
+    text-decoration: none;
 }

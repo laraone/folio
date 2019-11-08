@@ -5,13 +5,14 @@ header {
     align-items: center;
     max-width: 1500px;
     width: 85%;
-    @media (max-width: $large-devices) {
-        width: 90%;
+    @media (max-width: $medium-devices) {
+        width: 100%;
+        padding: 0 50px;
     }
     .logo {
         display: flex;
         justify-content: center;
-        padding: 15px 0;
+        padding: 15px;
 
         .logo-link {
             color: $logo-text-color;
@@ -20,17 +21,15 @@ header {
             font-weight: 600;
         }
     }
-    @media (max-width: $medium-devices) {
-        #navigation {
-            display: none;
-        }
-    }
 }
 
 #navigation {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: $medium-devices) {
+        display: none;
+    }
     .menu-item, .drop-menu-item {
         a {
             color: #222;
@@ -145,7 +144,7 @@ header {
 
 .hamburger-button-wrapper {
     display: none;
-    padding-top: 5px;
+    padding: 5px 15px 0 0;
 
     @media (max-width: $medium-devices) {
         display: block;
