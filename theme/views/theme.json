@@ -15,6 +15,673 @@
     "asset-path"        : "themes/folio",
     "settings": [
         {
+            "label": "General",
+            "key": "general",
+            "type": "section",
+            "settings": [
+                {
+                    "label": "Container",
+                    "key": "container",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Width",
+                            "key": "width",
+                            "default": "85%",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        },
+                        {
+                            "label": "Max Width",
+                            "key": "maxWidth",
+                            "default": "1500px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Font",
+                    "key": "font",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Family",
+                            "key": "family",
+                            "default": "Nunito, sans-serif",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        },
+                        {
+                            "label": "Color",
+                            "key": "color",
+                            "default": "#333",
+                            "type": "string",
+                            "meta": { "uiType": "color" }
+                        },
+                        {
+                            "label": "Size",
+                            "key": "size",
+                            "default": "13px",
+                            "type": "string",
+                            "meta": { "uiType": "px", "maxAllowed": 1 }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Content",
+            "key": "content",
+            "type": "section",
+            "settings": [
+                {
+                    "label": "General",
+                    "key": "general",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Post Title",
+                            "key": "postTitle",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Color",
+                                    "key": "color",
+                                    "default": "#444",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                },
+                                {
+                                    "label": "Hover Color",
+                                    "key": "hoverColor",
+                                    "default": "#444",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                },
+                                {
+                                    "label": "Size",
+                                    "key": "size",
+                                    "default": "h2",
+                                    "type": "string",
+                                    "meta": { "uiType": "select", "options": ["h1", "h2", "h3", "h4"] }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Featured Image",
+                            "key": "featuredImage",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Index Page Height",
+                                    "key": "indexPageHeight",
+                                    "default": "400px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input", "info": "Leave empty for full height" }
+                                },
+                                {
+                                    "label": "Single Page Height",
+                                    "key": "singlePageHeight",
+                                    "default": "400px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input", "info": "Leave empty for full height" }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "label": "Pagination",
+                    "key": "pagination",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Type",
+                            "key": "type",
+                            "default": "simple",
+                            "type": "string",
+                            "meta": { "uiType": "select", "options": ["simple", "standard"] }
+                        },
+                        {
+                            "label": "Per Page",
+                            "key": "perPage",
+                            "default": "6",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Pages",
+                    "key": "pages",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Show Title",
+                            "key": "showTitle",
+                            "default": false,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        },
+                        {
+                            "label": "Show Meta Data",
+                            "key": "showMetaData",
+                            "default": false,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        },
+                        {
+                            "label": "Show Author Bio",
+                            "key": "showAuthorBio",
+                            "default": false,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        },
+                        {
+                            "label": "Show Comments",
+                            "key": "showComments",
+                            "default": false,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Posts",
+                    "key": "posts",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Show Title",
+                            "key": "showTitle",
+                            "default": true,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        },
+                        {
+                            "label": "Show Meta Data",
+                            "key": "showMetaData",
+                            "default": true,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        },
+                        {
+                            "label": "Show Author Bio",
+                            "key": "showAuthorBio",
+                            "default": true,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        },
+                        {
+                            "label": "Show Comments",
+                            "key": "showComments",
+                            "default": true,
+                            "type": "boolean",
+                            "meta": { "uiType": "boolSelect" }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Header",
+            "key": "header",
+            "type": "section",
+            "settings": [
+                {
+                    "label": "General",
+                    "key": "general",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Height",
+                            "key": "height",
+                            "default": "122px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        },
+                        {
+                            "label": "Background Color",
+                            "key": "backgroundColor",
+                            "default": "",
+                            "type": "string",
+                            "meta": { "uiType": "color" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Logo",
+                    "key": "logo",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Logo Type",
+                            "key": "logotype",
+                            "default": "text",
+                            "type": "string",
+                            "meta": { "uiType": "select", "options": ["text", "image"] }
+                        },
+                        {
+                            "label": "Font Color",
+                            "key": "fontColor",
+                            "default": "#222",
+                            "type": "string",
+                            "meta": { "uiType": "color", "dependency": { "on": "logotype", "if": "text" } }
+                        },
+                        {
+                            "label": "Font Hover Color",
+                            "key": "fontHoverColor",
+                            "default": "#111",
+                            "type": "string",
+                            "meta": { "uiType": "color", "dependency": { "on": "logotype", "if": "text" } }
+                        },
+                        {
+                            "label": "Font Size",
+                            "key": "fontSize",
+                            "default": "24px",
+                            "type": "string",
+                            "meta": { "uiType": "input", "dependency": { "on": "logotype", "if": "text" } }
+                        },
+                        {
+                            "label": "Logo Image",
+                            "key": "logoImage",
+                            "default": "",
+                            "type": "string",
+                            "meta": { "uiType": "mediaLibrary", "dependency": { "on": "logotype", "if": "image" } }
+                        }
+                    ]
+                },
+                {
+                    "label": "Menu",
+                    "key": "menu",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Item Padding",
+                            "key": "itemPadding",
+                            "default": "5px 20px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        },
+                        {
+                            "label": "Font Size",
+                            "key": "fontSize",
+                            "default": "14px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        },
+                        {
+                            "label": "Item Font Color",
+                            "key": "fontColor",
+                            "default": "#222",
+                            "type": "string",
+                            "meta": { "uiType": "color" }
+                        },
+                        {
+                            "label": "Item Font Hover Color",
+                            "key": "fontHoverColor",
+                            "default": "#444",
+                            "type": "string",
+                            "meta": { "uiType": "color" }
+                        },
+                        {
+                            "label": "Item Background Color",
+                            "key": "itemBackgroundColor",
+                            "default": "",
+                            "type": "string",
+                            "meta": { "uiType": "color" }
+                        },
+                        {
+                            "label": "Item Hover Background Color",
+                            "key": "itemHoverBackgroundColor",
+                            "default": "#e8edf0",
+                            "type": "string",
+                            "meta": { "uiType": "color" }
+                        },
+                        {
+                            "label": "Drop Down",
+                            "key": "dropdown",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Animation",
+                                    "key": "animation",
+                                    "default": "bounceIn",
+                                    "type": "string",
+                                    "meta": { "uiType": "select", "options": [
+                                        "none", "bounceIn", "flipInX", "flipInY"
+                                        ] }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "label": "Hamburger",
+                    "key": "hamburger",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "General",
+                            "key": "general",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Background Color",
+                                    "key": "backgroundColor",
+                                    "default": "#222",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                },
+                                {
+                                    "label": "Enter Animation",
+                                    "key": "inAnimation",
+                                    "default": "bounceInRight",
+                                    "type": "string",
+                                    "meta": { "uiType": "select", "options": [
+                                        "bounceInLeft", "bounceInRight", "bounceInUp", "bounceInDown",
+                                        "zoomInLeft", "zoomInRight", "zoomInUp", "zoomInDown",
+                                        "slideInLeft", "slideInRight", "slideInUp", "slideInDown"
+                                        ] }
+                                },
+                                {
+                                    "label": "Exit Animation",
+                                    "key": "outAnimation",
+                                    "default": "bounceOutUp",
+                                    "type": "string",
+                                    "meta": { "uiType": "select", "options": [
+                                        "bounceOutLeft", "bounceOutRight", "bounceOutUp", "bounceOutDown",
+                                        "zoomOutLeft", "zoomOutRight", "zoomOutUp", "zoomOutDown",
+                                        "slideOutLeft", "slideOutRight", "slideOutUp", "slideOutDown"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Button",
+                            "key": "button",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Animation",
+                                    "key": "style",
+                                    "default": "hamburger--collapse",
+                                    "type": "string",
+                                    "meta": { "uiType": "select", "options": [
+                                        "hamburger--collapse", "hamburger--slider", "hamburger--squeeze", "hamburger--arrow",
+                                        "hamburger--arrowturn", "hamburger--spin", "hamburger--elastic", "hamburger--vortex",
+                                        "hamburger--stand", "hamburger--spring", "hamburger--spring", "hamburger--minus",
+                                        "hamburger--3dx", "hamburger--3dy"] }
+                                },
+                                {
+                                    "label": "Color",
+                                    "key": "color",
+                                    "default": "#333",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                },
+                                {
+                                    "label": "Active Color",
+                                    "key": "activeColor",
+                                    "default": "#333",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Menu Items",
+                            "key": "items",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Text Transform",
+                                    "key": "textTransform",
+                                    "default": "uppercase",
+                                    "type": "string",
+                                    "meta": { "uiType": "select", "options": [ "none", "capitalize", "uppercase", "lowercase" ] }
+                                },
+                                {
+                                    "label": "Spacing",
+                                    "key": "spacing",
+                                    "default": "10px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Indent",
+                                    "key": "indent",
+                                    "default": "20px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Font Size",
+                                    "key": "fontSize",
+                                    "default": "20px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Font Color",
+                                    "key": "fontColor",
+                                    "default": "#fbfbfb",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Drop-Down Items",
+                            "key": "dropDown",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Text Transform",
+                                    "key": "textTransform",
+                                    "default": "capitalize",
+                                    "type": "string",
+                                    "meta": { "uiType": "select", "options": [ "none", "capitalize", "uppercase", "lowercase" ] }
+                                },
+                                {
+                                    "label": "Spacing",
+                                    "key": "spacing",
+                                    "default": "10px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Indent",
+                                    "key": "indent",
+                                    "default": "40px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Font Size",
+                                    "key": "fontSize",
+                                    "default": "20px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Font Color",
+                                    "key": "fontColor",
+                                    "default": "#fbfbfb",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Layouts",
+            "key": "layouts",
+            "type": "section",
+            "meta": { "hidden": true },
+            "settings": [
+                {
+                    "label": "Supports",
+                    "key": "supports",
+                    "default": "header-main-footer",
+                    "type": "string",
+                    "meta": { "hidden": true, "options": ["header-main-footer", "aside-main", "header-aside-main", "header-aside-main-footer"] }
+                },
+                {
+                    "label": "Main",
+                    "key": "main",
+                    "default": "header-main-footer",
+                    "type": "string",
+                    "meta": { "hidden": true, "uiType": "layoutSelector", "options": ["header-main-footer", "header-main"] }
+                }
+            ]
+        },
+        {
+            "label": "Footer",
+            "key": "footer",
+            "type": "section",
+            "settings": [
+                {
+                    "label": "General",
+                    "key": "general",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Background Color",
+                            "key": "backgroundColor",
+                            "default": "#27313a",
+                            "type": "string",
+                            "meta": { "uiType": "color" }
+                        },
+                        {
+                            "label": "Font",
+                            "key": "font",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Color",
+                                    "key": "color",
+                                    "default": "white",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                },
+                                {
+                                    "label": "Size",
+                                    "key": "size",
+                                    "default": "12px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Copyright",
+                            "key": "copyright",
+                            "default": "© Niko Craft",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Headlines",
+            "key": "headlines",
+            "type": "section",
+            "settings": [
+                {
+                    "label": "Headline 1",
+                    "key": "headline1",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Size",
+                            "key": "size",
+                            "default": "55px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Headline 2",
+                    "key": "headline2",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Size",
+                            "key": "size",
+                            "default": "45px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Headline 3",
+                    "key": "headline3",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Size",
+                            "key": "size",
+                            "default": "30px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Headline 4",
+                    "key": "headline4",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Size",
+                            "key": "size",
+                            "default": "25px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Headline 5",
+                    "key": "headline5",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Size",
+                            "key": "size",
+                            "default": "20px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                },
+                {
+                    "label": "Headline 6",
+                    "key": "headline6",
+                    "type": "section",
+                    "settings": [
+                        {
+                            "label": "Size",
+                            "key": "size",
+                            "default": "15px",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "label": "Resources",
             "key": "resources",
             "type": "section",

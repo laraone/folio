@@ -1,12 +1,12 @@
 <header>
     <div class="logo">
-        @if(get_theme_setting('sidebar.logo.logotype') == 'text')
+        @if(get_theme_setting('header.logo.logotype') == 'text')
             <a class="logo-link" href="{{ url('/') }}">
                 {{ get_website_setting('website.title') }}
             </a>
         @else
             <a class="logo-link" href="{{ url('/') }}">
-                <img src="{{ get_theme_setting('sidebar.logo.logoImage') }}" class="img-responsive" alt="logo">
+                <img src="{{ get_theme_setting('header.logo.logoImage') }}" class="img-responsive" alt="logo">
             </a>
         @endif
     </div>
