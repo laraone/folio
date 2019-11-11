@@ -118,7 +118,7 @@ header {
     height: auto;
     padding: 20px 0px;
     background-color: $mobile-header-bg;
-    .logo-link, .menu-item > a, .menu-item > a > i {
+    .logo > a, #navigation .menu-item > a, #navigation .menu-item > a > i {
         color: $mobile-header-color;
     }
     .logo {

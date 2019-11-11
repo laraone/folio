@@ -100,16 +100,6 @@
 
 .posts {
     display: flex;
-    .post {
-        flex: 1;
-        @media (max-width: $medium-devices) {
-            flex-basis: 49%;
-        }
-    }
-    @media (max-width: $medium-devices) {
-        flex-wrap: wrap;
-        margin: 25px 0;
-    }
 }
 
 .index-featured-image {
@@ -134,4 +124,5 @@
 
 .index-image-link {
     text-decoration: none;
+    // margin: 5px;
 }
