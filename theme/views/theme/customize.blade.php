@@ -23,7 +23,7 @@ body {
     @style([ 'property' => 'color', 'value' => data_get($settings, 'content.general.postTitle.hoverColor') ])
 }
 
-.posts .post div.index-featured-image {
+.posts .masonry-brick, .post .index-image-link .post-img {
     @style([ 'property' => 'height', 'value' => data_get($settings, 'content.general.featuredImage.indexPageHeight') ])
 }
 
@@ -118,6 +118,7 @@ header .logo .logo-link:hover {
 }
 
 footer {
+    @style([ 'property' => 'width', 'value' => data_get($settings, 'footer.general.width') ])
     @style([ 'property' => 'color', 'value' => data_get($settings, 'footer.general.font.color') ])
     @style([ 'property' => 'font-size', 'value' => data_get($settings, 'footer.general.font.size') ])
     @style([ 'property' => 'background-color', 'value' => data_get($settings, 'footer.general.backgroundColor') ])

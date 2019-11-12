@@ -559,6 +559,13 @@
                             "meta": { "uiType": "color" }
                         },
                         {
+                            "label": "Width",
+                            "key": "width",
+                            "default": "auto",
+                            "type": "string",
+                            "meta": { "uiType": "input" }
+                        },
+                        {
                             "label": "Font",
                             "key": "font",
                             "type": "section",

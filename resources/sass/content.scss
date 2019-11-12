@@ -1,15 +1,8 @@
-// Work in progress
-
 .content-single {
-    padding: 20px 100px;
+    padding: 20px 0px;
     max-width: 1500px;
     margin: 0 auto;
-    @media (max-width: $large-devices) {
-        padding: 20px 0px;
-    }
 }
-
-// Posts
 
 .post {
     .post-meta, .post-title {
@@ -91,8 +84,6 @@
     }
 }
 
-// Index/Taxonomy
-
 .content-index {
     width: 100%;
     max-width: 100%;
@@ -102,27 +93,78 @@
     display: flex;
 }
 
-.index-featured-image {
-    height: 650px;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0px 10px;
-    background-repeat: no-repeat;
+.post-img {
+    display: block;
+    max-width: 100%;
+    height: 250px;
     background-size: cover;
-    align-items: center;
     background-position: center;
-    .index-post-title {
-        background-color: rgba(0, 0, 0, 0.3);
-        color: white;
-        margin-bottom: 40px;
-        padding: 0px 5px;
-        width: fit-content;
-        text-align: center;
-        text-transform: uppercase;
+    @media (max-width: $large-devices) {
+        height: 285px;
+    }
+    @media (max-width: $medium-devices) {
+        height: 225px;
+    }
+    @media (max-width: $small-devices) {
+        height: 180px;
+    }
+    @media (max-width: $extra-small-devices) {
+        height: 150px;
+    }
+// .index-post-title {
+//     background-color: rgba(0, 0, 0, 0.3);
+//     color: white;
+//     margin-bottom: 40px;
+//     padding: 0px 5px;
+//     width: fit-content;
+//     text-align: center;
+//     text-transform: uppercase;
+// }
+}
+
+.masonry {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.masonry-brick {
+    padding: 5px;
+    @media (max-width: $large-devices) {
+        height: 285px;
+    }
+    @media (max-width: $medium-devices) {
+        height: 225px;
+    }
+    @media (max-width: $small-devices) {
+        height: 180px;
+    }
+    @media (max-width: $extra-small-devices) {
+        height: 150px;
+    }
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+    .index-image-link {
+        text-decoration: none;
     }
 }
 
-.index-image-link {
-    text-decoration: none;
-    // margin: 5px;
+.masonry-brick a img, .masonry-brick img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
+
+.masonry-brick:nth-child(4n+1) {
+    width: 250px;
+  }
+  .masonry-brick:nth-child(4n+1):nth-child(4n+2) {
+    width: 325px;
+  }
+  .masonry-brick:nth-child(4n+1):nth-child(4n+3) {
+    width: 180px;
+  }
+  .masonry-brick:nth-child(4n+1):nth-child(4n+4) {
+    width: 380px;
+  }
