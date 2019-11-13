@@ -40,32 +40,31 @@ header {
             padding: 5px 12px;
             font-weight: 600;
         }
-    }
-    .dropdown {
-        position: relative;
-        display: inline-block !important;
-    }
-    .drop-menu-item {
-        a {
-            padding: 7px 20px;
+        &:hover {
+            background-color: #eef2f4;
         }
     }
 
-    .dropdown {
-        &:hover {
-            .dropdown-content {
-                display: inline-block;
-            }
-        }
-    }
     .dropdown-content {
         display: none;
+        z-index: 1;
+        width: fit-content;
         position: absolute;
-        min-width: 100px;
-        height: max-content;
+        margin-top: 53px;
         background-color: #eef2f4;
-        padding: 12px 0px;
-        z-index: 90000;
+    }
+
+    .drop-menu-item {
+        display: flex;
+
+        a {
+            text-transform: $menu-dropdown-item-text-transform;
+            padding: 5px 25px;
+        }
+    }
+
+    .dropdown-button-close {
+        display: none;
     }
 
     .menu-item {
@@ -77,9 +76,9 @@ header {
 
         i {
             color: $menu-text-color;
-            font-size: $menu-item-font-size;
+            font-size: 16px;
             cursor: pointer;
-            padding: 0px;
+            padding: 0px 10px 0px 0px;
         }
 
         a {
@@ -118,7 +117,7 @@ header {
     height: auto;
     padding: 20px 0px;
     background-color: $mobile-header-bg;
-    .logo > a, #navigation .menu-item > a, #navigation .menu-item > a > i {
+    .logo > a, #navigation .menu-item > a, #navigation .menu-item > a > i, #navigation .drop-menu-item > a {
         color: $mobile-header-color;
     }
     .logo {
@@ -129,16 +128,31 @@ header {
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
         background-color: $mobile-header-color;
     }
-    .dropdown-content {
-        position: relative !important;
-    }
     .hamburger-button-wrapper {
         display: block;
         justify-content: center;
         padding-right: 0px;
     }
     #navigation {
+        align-items: flex-start !important;
         padding-right: 0px;
+        a {
+            &:hover {
+                color: #333;
+            }
+        }
+        i {
+            color: $mobile-header-color;
+        }
+        .menu-item, .drop-menu-item {
+            width: 100%;
+        }
+        .dropdown-content {
+            margin-top: 0;
+            position: unset;
+            width: 100%;
+            background-color: transparent;
+        }
     }
 }
 

@@ -34,7 +34,8 @@
                             <a id="open-menu-{{ $item->id }}">{{ $item->title }}</a>
                         @endif
                         @if($item->subItems->count())
-                        <i class="fas fa-angle-down"></i>
+                            <i class="dropdown-button-open fas fa-plus-circle"></i>
+                            <i class="dropdown-button-close fas fa-minus-circle"></i>
                         @endif
                     @endif
 
@@ -57,8 +58,9 @@
             </div>
 
             <div class="menu-item dropdown">
-                <a href="#" id="open-menu-1">Dropdown <i class="dropdown-arrow fas fa-angle-down"></i></a>
-
+                <a href="#" id="open-menu-1">Dropdown</a>
+                <i class="dropdown-button-open fas fa-plus-circle"></i>
+                <i class="dropdown-button-close fas fa-minus-circle"></i>
 
                 <div class="dropdown-content">
                     <div class="drop-menu-item"><a href="/posts">Example 1</a></div>
