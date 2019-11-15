@@ -1,12 +1,11 @@
-.container {
-    @style([ 'property' => 'width', 'value' => data_get($settings, 'general.container.width') ])
-    @style([ 'property' => 'max-width', 'value' => data_get($settings, 'general.container.maxWidth') ])
+.content-index {
+    @style([ 'property' => 'width', 'value' => data_get($settings, 'general.container.index.width') ])
+    @style([ 'property' => 'max-width', 'value' => data_get($settings, 'general.container.index.maxWidth') ])
 }
 
-@media (min-width: 1200px) {
-    .container {
-        @style([ 'property' => 'width', 'value' => data_get($settings, 'general.container.width') ])
-    }
+.content-single {
+    @style([ 'property' => 'width', 'value' => data_get($settings, 'general.container.single.width') ])
+    @style([ 'property' => 'max-width', 'value' => data_get($settings, 'general.container.single.maxWidth') ])
 }
 
 body {

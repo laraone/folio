@@ -19,6 +19,9 @@ header {
             font-size: $logo-text-size;
             text-decoration: none;
             font-weight: 600;
+            &:hover {
+                color: #777;
+            }
         }
     }
 }
@@ -37,13 +40,30 @@ header {
             height: 100%;
             display: flex;
             align-items: center;
-            padding: 5px 12px;
+            padding: 5px 20px;
             font-weight: 600;
         }
         &:hover {
             background-color: #eef2f4;
         }
     }
+
+    .dropdown {
+        @media (min-width: $medium-devices) {
+            &:hover {
+                .dropdown-content {
+                    display: inline-block !important;
+                }
+            }
+            .dropdown-content {
+                display: none;
+            }
+            .dropdown-button-close, .dropdown-button-open {
+                display: none !important;
+            }
+        }
+    }
+
 
     .dropdown-content {
         display: none;
@@ -64,6 +84,14 @@ header {
     }
 
     .dropdown-button-close {
+        display: none;
+    }
+
+    .dropdown-visible {
+        display: inline-block;
+    }
+
+    .dropdown-invisible {
         display: none;
     }
 

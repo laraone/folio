@@ -13,10 +13,10 @@ $container-width: 85%;
 $container-max-width: 1500px;
 
 $mobile-header-bg: #333;
-$mobile-header-color: rgb(150, 150, 150);
+$mobile-header-color: #888;
 
 // Logo
-$logo-text-color: #333;
+$logo-text-color: #555;
 $logo-text-size: 32px;
 
 // Tagline
@@ -24,9 +24,9 @@ $tagline-text-color: #333;
 $tagline-font-size: 14px;
 
 // Navigation Menu
-$menu-text-color: #333;
-$menu-item-text-hover-color: rgb(95, 95, 95);
-$menu-item-font-size: 11px;
+$menu-text-color: #777;
+$menu-item-text-hover-color: #555;
+$menu-item-font-size: 14px;
 $menu-item-text-transform: uppercase;
 $menu-dropdown-item-padding: 5px 0 5px 20px;
 $menu-dropdown-item-text-transform: none;

@@ -25,18 +25,46 @@
                     "type": "section",
                     "settings": [
                         {
-                            "label": "Width",
-                            "key": "width",
-                            "default": "85%",
-                            "type": "string",
-                            "meta": { "uiType": "input" }
+                            "label": "Index Page",
+                            "key": "index",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Width",
+                                    "key": "width",
+                                    "default": "100%",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Max Width",
+                                    "key": "maxWidth",
+                                    "default": "100%",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                }
+                            ]
                         },
                         {
-                            "label": "Max Width",
-                            "key": "maxWidth",
-                            "default": "1500px",
-                            "type": "string",
-                            "meta": { "uiType": "input" }
+                            "label": "Single Page",
+                            "key": "single",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Width",
+                                    "key": "width",
+                                    "default": "90%",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Max Width",
+                                    "key": "maxWidth",
+                                    "default": "1500px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                }
+                            ]
                         }
                     ]
                 },
@@ -62,7 +90,7 @@
                         {
                             "label": "Size",
                             "key": "size",
-                            "default": "13px",
+                            "default": "16px",
                             "type": "string",
                             "meta": { "uiType": "px", "maxAllowed": 1 }
                         }
@@ -279,21 +307,21 @@
                         {
                             "label": "Font Color",
                             "key": "fontColor",
-                            "default": "#222",
+                            "default": "#555",
                             "type": "string",
                             "meta": { "uiType": "color", "dependency": { "on": "logotype", "if": "text" } }
                         },
                         {
                             "label": "Font Hover Color",
                             "key": "fontHoverColor",
-                            "default": "#111",
+                            "default": "#777",
                             "type": "string",
                             "meta": { "uiType": "color", "dependency": { "on": "logotype", "if": "text" } }
                         },
                         {
                             "label": "Font Size",
                             "key": "fontSize",
-                            "default": "24px",
+                            "default": "32px",
                             "type": "string",
                             "meta": { "uiType": "input", "dependency": { "on": "logotype", "if": "text" } }
                         },
@@ -328,14 +356,14 @@
                         {
                             "label": "Item Font Color",
                             "key": "fontColor",
-                            "default": "#222",
+                            "default": "#777",
                             "type": "string",
                             "meta": { "uiType": "color" }
                         },
                         {
                             "label": "Item Font Hover Color",
                             "key": "fontHoverColor",
-                            "default": "#444",
+                            "default": "#555",
                             "type": "string",
                             "meta": { "uiType": "color" }
                         },
@@ -349,25 +377,9 @@
                         {
                             "label": "Item Hover Background Color",
                             "key": "itemHoverBackgroundColor",
-                            "default": "#e8edf0",
+                            "default": "#eef2f4",
                             "type": "string",
                             "meta": { "uiType": "color" }
-                        },
-                        {
-                            "label": "Drop Down",
-                            "key": "dropdown",
-                            "type": "section",
-                            "settings": [
-                                {
-                                    "label": "Animation",
-                                    "key": "animation",
-                                    "default": "bounceIn",
-                                    "type": "string",
-                                    "meta": { "uiType": "select", "options": [
-                                        "none", "bounceIn", "flipInX", "flipInY"
-                                        ] }
-                                }
-                            ]
                         }
                     ]
                 },
@@ -384,7 +396,7 @@
                                 {
                                     "label": "Background Color",
                                     "key": "backgroundColor",
-                                    "default": "#222",
+                                    "default": "#333",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 },
@@ -432,14 +444,14 @@
                                 {
                                     "label": "Color",
                                     "key": "color",
-                                    "default": "#333",
+                                    "default": "#888",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 },
                                 {
                                     "label": "Active Color",
                                     "key": "activeColor",
-                                    "default": "#333",
+                                    "default": "#888",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 }
@@ -460,7 +472,7 @@
                                 {
                                     "label": "Spacing",
                                     "key": "spacing",
-                                    "default": "10px",
+                                    "default": "5px",
                                     "type": "string",
                                     "meta": { "uiType": "input" }
                                 },
@@ -474,14 +486,14 @@
                                 {
                                     "label": "Font Size",
                                     "key": "fontSize",
-                                    "default": "20px",
+                                    "default": "14px",
                                     "type": "string",
                                     "meta": { "uiType": "input" }
                                 },
                                 {
                                     "label": "Font Color",
                                     "key": "fontColor",
-                                    "default": "#fbfbfb",
+                                    "default": "#777",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 }
@@ -516,14 +528,14 @@
                                 {
                                     "label": "Font Size",
                                     "key": "fontSize",
-                                    "default": "20px",
+                                    "default": "14px",
                                     "type": "string",
                                     "meta": { "uiType": "input" }
                                 },
                                 {
                                     "label": "Font Color",
                                     "key": "fontColor",
-                                    "default": "#fbfbfb",
+                                    "default": "#777",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 }
@@ -568,7 +580,7 @@
                         {
                             "label": "Background Color",
                             "key": "backgroundColor",
-                            "default": "#27313a",
+                            "default": "transparent",
                             "type": "string",
                             "meta": { "uiType": "color" }
                         },
@@ -587,14 +599,14 @@
                                 {
                                     "label": "Color",
                                     "key": "color",
-                                    "default": "white",
+                                    "default": "#333",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 },
                                 {
                                     "label": "Size",
                                     "key": "size",
-                                    "default": "12px",
+                                    "default": "16px",
                                     "type": "string",
                                     "meta": { "uiType": "input" }
                                 }
