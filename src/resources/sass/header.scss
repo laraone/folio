@@ -79,7 +79,7 @@ header {
 
         a {
             text-transform: $menu-dropdown-item-text-transform;
-            padding: 5px 25px;
+            padding: 5px 30px;
         }
     }
 
@@ -145,7 +145,7 @@ header {
     height: auto;
     padding: 20px 0px;
     background-color: $mobile-header-bg;
-    .logo > a, #navigation .menu-item > a, #navigation .menu-item > a > i, #navigation .drop-menu-item > a {
+    .logo > a, #navigation .menu-item > a, #navigation .drop-menu-item > a {
         color: $mobile-header-color;
     }
     .logo {

@@ -1,7 +1,7 @@
 {
     "name"              : "folio",
-    "releases_url"      : "https://github.com/laraone/folio-theme-releases/raw/master/releases.json",
-    "download_url"      : "https://github.com/laraone/folio-theme-releases/releases/download",
+    "releases_url"      : "https://github.com/laraone/folio/raw/master/releases.json",
+    "download_url"      : "https://github.com/laraone/folio/releases/download",
     "namespace"         : "com.reimaginedworks.folio",
     "folder"            : "folio",
     "tags"              : [ "minimalistic", "clean", "modern", "blog" ],
@@ -10,7 +10,7 @@
     "version"           : "1.0.0",
     "description"       : "Folio is a simple portfolio theme.",
     "url"               : "www.laraone.com",
-    "screenshots"       : 2,
+    "screenshots"       : 1,
     "views-path"        : "folio",
     "asset-path"        : "themes/folio",
     "settings": [
@@ -39,7 +39,7 @@
                                 {
                                     "label": "Max Width",
                                     "key": "maxWidth",
-                                    "default": "100%",
+                                    "default": "1900px",
                                     "type": "string",
                                     "meta": { "uiType": "input" }
                                 }
@@ -307,7 +307,7 @@
                         {
                             "label": "Font Color",
                             "key": "fontColor",
-                            "default": "#555",
+                            "default": "#444",
                             "type": "string",
                             "meta": { "uiType": "color", "dependency": { "on": "logotype", "if": "text" } }
                         },
@@ -356,14 +356,14 @@
                         {
                             "label": "Item Font Color",
                             "key": "fontColor",
-                            "default": "#777",
+                            "default": "#444",
                             "type": "string",
                             "meta": { "uiType": "color" }
                         },
                         {
                             "label": "Item Font Hover Color",
                             "key": "fontHoverColor",
-                            "default": "#555",
+                            "default": "#111",
                             "type": "string",
                             "meta": { "uiType": "color" }
                         },
@@ -430,17 +430,6 @@
                             "key": "button",
                             "type": "section",
                             "settings": [
-                                {
-                                    "label": "Animation",
-                                    "key": "style",
-                                    "default": "hamburger--collapse",
-                                    "type": "string",
-                                    "meta": { "uiType": "select", "options": [
-                                        "hamburger--collapse", "hamburger--slider", "hamburger--squeeze", "hamburger--arrow",
-                                        "hamburger--arrowturn", "hamburger--spin", "hamburger--elastic", "hamburger--vortex",
-                                        "hamburger--stand", "hamburger--spring", "hamburger--spring", "hamburger--minus",
-                                        "hamburger--3dx", "hamburger--3dy"] }
-                                },
                                 {
                                     "label": "Color",
                                     "key": "color",
@@ -514,14 +503,14 @@
                                 {
                                     "label": "Spacing",
                                     "key": "spacing",
-                                    "default": "10px",
+                                    "default": "5px",
                                     "type": "string",
                                     "meta": { "uiType": "input" }
                                 },
                                 {
                                     "label": "Indent",
                                     "key": "indent",
-                                    "default": "40px",
+                                    "default": "30px",
                                     "type": "string",
                                     "meta": { "uiType": "input" }
                                 },
@@ -535,7 +524,7 @@
                                 {
                                     "label": "Font Color",
                                     "key": "fontColor",
-                                    "default": "#777",
+                                    "default": "#888",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 }
