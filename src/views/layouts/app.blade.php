@@ -17,25 +17,28 @@
 @routes
 
 @php
-    $fontResources = get_theme_setting('resources.fonts');
-    $iconResources = get_theme_setting('resources.icons');
-    $cssResources = get_theme_setting('resources.css');
     $themeFolder = get_theme_folder();
 @endphp
 
+<!-- main script -->
+
 <script src="{{ mix('js/app.js', 'themes/'.$themeFolder) }}"></script>
 
-@php
+{{-- @php
     $jsResources = get_theme_setting('resources.javascript');
-@endphp
+@endphp --}}
 
-@foreach ( $jsResources as $key => $jsResource )
+{{-- third party js libs that theme specified --}}
+
+{{-- @foreach ( $jsResources as $key => $jsResource )
     @if($jsResource)
         <script id="{{ $key }}" src="{{ $jsResource }}"></script>
     @endif
-@endforeach
+@endforeach --}}
 
 @include('includes/scripts')
+
+{{-- scripts injected by specific views --}}
 
 @stack('scripts')
 

@@ -5,7 +5,7 @@ header {
     align-items: center;
     max-width: 1500px;
     width: 85%;
-    @media (max-width: $medium-devices) {
+    @media (max-width: $mediumDevices) {
         width: 100%;
         padding: 0 50px;
     }
@@ -15,8 +15,8 @@ header {
         padding: 15px;
 
         .logo-link {
-            color: $logo-text-color;
-            font-size: $logo-text-size;
+            color: $logoTextColor;
+            font-size: $logoTextSize;
             text-decoration: none;
             font-weight: 600;
             &:hover {
@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    @media (max-width: $medium-devices) {
+    @media (max-width: $mediumDevices) {
         display: none;
     }
     .menu-item, .drop-menu-item {
@@ -49,7 +49,7 @@ header {
     }
 
     .dropdown {
-        @media (min-width: $medium-devices) {
+        @media (min-width: $mediumDevices) {
             &:hover {
                 .dropdown-content {
                     display: inline-block !important;
@@ -57,9 +57,6 @@ header {
             }
             .dropdown-content {
                 display: none;
-            }
-            .dropdown-button-close, .dropdown-button-open {
-                display: none !important;
             }
         }
     }
@@ -78,21 +75,16 @@ header {
         display: flex;
 
         a {
-            text-transform: $menu-dropdown-item-text-transform;
+            text-transform: $menuDropdownItemTextTransform;
             padding: 5px 30px;
         }
     }
 
-    .dropdown-button-close {
-        display: none;
-    }
-
     .dropdown-visible {
         display: inline-block;
-    }
-
-    .dropdown-invisible {
-        display: none;
+        @media (min-width: $mediumDevices) {
+            display: none;
+        }
     }
 
     .menu-item {
@@ -103,23 +95,23 @@ header {
         user-select: none;
 
         i {
-            color: $menu-text-color;
+            color: $menuTextColor;
             font-size: 16px;
             cursor: pointer;
             padding: 0px 10px 0px 0px;
         }
 
         a {
-            font-size: $menu-item-font-size;
-            color: $menu-text-color;
-            text-transform: $menu-item-text-transform;
+            font-size: $menuItemFontSize;
+            color: $menuTextColor;
+            text-transform: $menuItemTextTransform;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex: 1;
 
             &:hover {
-                color: $menu-item-text-hover-color;
+                color: $menuItemTextHoverColor;
             }
 
             i {
@@ -144,9 +136,9 @@ header {
     justify-content: center;
     height: auto;
     padding: 20px 0px;
-    background-color: $mobile-header-bg;
+    background-color: $mobileHeaderBg;
     .logo > a, #navigation .menu-item > a, #navigation .drop-menu-item > a {
-        color: $mobile-header-color;
+        color: $mobileHeaderColor;
     }
     .logo {
         padding: 20px 0px 30px 0px;
@@ -154,7 +146,7 @@ header {
     }
     .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after,
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-        background-color: $mobile-header-color;
+        background-color: $mobileHeaderColor;
     }
     .hamburger-button-wrapper {
         display: block;
@@ -170,7 +162,7 @@ header {
             }
         }
         i {
-            color: $mobile-header-color;
+            color: $mobileHeaderColor;
         }
         .menu-item, .drop-menu-item {
             width: 100%;
@@ -188,20 +180,20 @@ header {
     display: none;
     padding: 5px 15px 0 0;
 
-    @media (max-width: $medium-devices) {
+    @media (max-width: $mediumDevices) {
         display: block;
     }
 }
 
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
-    background-color: $menu-text-color;
+    background-color: $menuTextColor;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    background-color: $menu-text-color;
+    background-color: $menuTextColor;
 }
 
 .hamburger {
     outline: none !important;
-    color: $menu-text-color !important;
+    color: $menuTextColor !important;
 }

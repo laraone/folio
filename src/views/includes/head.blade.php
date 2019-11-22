@@ -18,7 +18,7 @@
 @php
     $fontResources = get_theme_setting('resources.fonts');
     $iconResources = get_theme_setting('resources.icons');
-    $cssResources = get_theme_setting('resources.css');
+    // $cssResources = get_theme_setting('resources.css');
     $themeFolder = get_theme_folder();
 @endphp
 
@@ -28,9 +28,15 @@
     @endif
 @endforeach
 
-@foreach ( $cssResources as $cssResource )
+{{-- @foreach ( $cssResources as $cssResource )
     @if($cssResource)
         <link rel="stylesheet" id="css-resource-{{ $loop->iteration }}" href="{{ $cssResource }}">
+    @endif
+@endforeach --}}
+
+@foreach ( $iconResources as $iconResource )
+    @if($iconResource)
+        <link rel="stylesheet" id="icon-resource-{{ $loop->iteration }}" href="{{ $iconResource }}">
     @endif
 @endforeach
 

@@ -385,7 +385,7 @@
                 },
                 {
                     "label": "Hamburger",
-                    "key": "hamburger",
+                    "key": "hamburgerMenu",
                     "type": "section",
                     "settings": [
                         {
@@ -448,7 +448,7 @@
                         },
                         {
                             "label": "Menu Items",
-                            "key": "items",
+                            "key": "menuItems",
                             "type": "section",
                             "settings": [
                                 {
@@ -490,7 +490,7 @@
                         },
                         {
                             "label": "Drop-Down Items",
-                            "key": "dropDown",
+                            "key": "dropDownItems",
                             "type": "section",
                             "settings": [
                                 {
@@ -525,6 +525,41 @@
                                     "label": "Font Color",
                                     "key": "fontColor",
                                     "default": "#888",
+                                    "type": "string",
+                                    "meta": { "uiType": "color" }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Drop-Down Buttons",
+                            "key": "dropDownButtons",
+                            "type": "section",
+                            "settings": [
+                                {
+                                    "label": "Open Icon",
+                                    "key": "openIcon",
+                                    "default": "fas fa-plus-circle",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Close Icon",
+                                    "key": "closeIcon",
+                                    "default": "fas fa-minus-circle",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Size",
+                                    "key": "fontSize",
+                                    "default": "22px",
+                                    "type": "string",
+                                    "meta": { "uiType": "input" }
+                                },
+                                {
+                                    "label": "Color",
+                                    "key": "fontColor",
+                                    "default": "#fbfbfb",
                                     "type": "string",
                                     "meta": { "uiType": "color" }
                                 }
@@ -723,31 +758,17 @@
                     ]
                 },
                 {
-                    "label": "Css",
-                    "key": "css",
+                    "label": "Icons",
+                    "key": "icons",
                     "type": "section",
                     "meta": { "hidden": true },
                     "settings": [
                         {
                             "label": "Source",
-                            "key": "icons",
+                            "key": "source-1",
                             "default": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css",
                             "type": "string",
                             "meta": { "uiType": "input" }
-                        },
-                        {
-                            "label": "Source",
-                            "key": "popup",
-                            "default": "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css",
-                            "type": "string",
-                            "meta": { "uiType": "inputDisabled" }
-                        },
-                        {
-                            "label": "Source",
-                            "key": "animatecss",
-                            "default": "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css",
-                            "type": "string",
-                            "meta": { "uiType": "inputDisabled" }
                         }
                     ]
                 },
@@ -766,8 +787,8 @@
                         },
                         {
                             "label": "Source",
-                            "key": "magnific-popup",
-                            "default": "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js",
+                            "key": "lightense",
+                            "default": "https://cdn.jsdelivr.net/gh/sparanoid/lightense-images@master/lightense.min.js",
                             "type": "string",
                             "meta": { "uiType": "inputDisabled" }
                         }
@@ -776,12 +797,12 @@
             ]
         },
         {
-            "label": "Css",
+            "label": "Custom Css",
             "key": "css",
             "type": "section",
             "settings": [
                 {
-                    "label": "Custom Css",
+                    "label": "Css",
                     "key": "customCss",
                     "default": "",
                     "type": "string",

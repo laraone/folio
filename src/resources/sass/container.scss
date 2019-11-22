@@ -4,11 +4,11 @@
 }
 
 .container {
-    width: $container-width;
-    max-width: $container-max-width;
+    width: $containerWidth;
+    max-width: $containerMaxWidth;
     flex: 1;
 
-    @media (max-width: $large-devices) {
+    @media (max-width: $largeDevices) {
         width: 90%;
     }
 }

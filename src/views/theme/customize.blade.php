@@ -70,41 +70,41 @@ header {
 }
 
 header .hamburger-box .hamburger-inner, header .hamburger-box .hamburger-inner::before, header .hamburger-box .hamburger-inner::after {
-    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburger.button.color') ])
+    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburgerMenu.button.color') ])
 }
 
 header .hamburger-inner,header .hamburger-inner::before,header  .hamburger-inner::after {
-    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburger.button.color') ])
+    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburgerMenu.button.color') ])
 }
 
 .header-active .hamburger.is-active .hamburger-inner, .header-active .hamburger.is-active .hamburger-inner::before, .header-active .hamburger.is-active .hamburger-inner::after {
-    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburger.button.activeColor') ])
+    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburgerMenu.button.activeColor') ])
 }
 
 .header-active {
-    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburger.general.backgroundColor') ])
+    @style([ 'property' => 'background-color', 'value' => data_get($settings, 'header.hamburgerMenu.general.backgroundColor') ])
 }
 
 .header-active logo logo-link {
-    @style([ 'property' => 'color', 'value' => data_get($settings, 'header.hamburger.logo.color') ])
+    @style([ 'property' => 'color', 'value' => data_get($settings, 'header.hamburgerMenu.logo.color') ])
 }
 
 .header-active #navigation .menu-item a {
-    @style([ 'property' => 'font-size', 'value' => data_get($settings, 'header.hamburger.items.fontSize') ])
-    @style([ 'property' => 'color', 'value' => data_get($settings, 'header.hamburger.items.fontColor') ])
-    @style([ 'property' => 'padding-top', 'value' => data_get($settings, 'header.hamburger.items.spacing') ])
-    @style([ 'property' => 'padding-bottom', 'value' => data_get($settings, 'header.hamburger.items.spacing') ])
-    @style([ 'property' => 'padding-left', 'value' => data_get($settings, 'header.hamburger.items.indent') ])
-    @style([ 'property' => 'text-transform', 'value' => data_get($settings, 'header.hamburger.items.textTransform') ])
+    @style([ 'property' => 'font-size', 'value' => data_get($settings, 'header.hamburgerMenu.menuItems.fontSize') ])
+    @style([ 'property' => 'color', 'value' => data_get($settings, 'header.hamburgerMenu.menuItems.fontColor') ])
+    @style([ 'property' => 'padding-top', 'value' => data_get($settings, 'header.hamburgerMenu.menuItems.spacing') ])
+    @style([ 'property' => 'padding-bottom', 'value' => data_get($settings, 'header.hamburgerMenu.menuItems.spacing') ])
+    @style([ 'property' => 'padding-left', 'value' => data_get($settings, 'header.hamburgerMenu.menuItems.indent') ])
+    @style([ 'property' => 'text-transform', 'value' => data_get($settings, 'header.hamburgerMenu.menuItems.textTransform') ])
 }
 
 .header-active #navigation .dropdown .drop-menu-item a {
-    @style([ 'property' => 'font-size', 'value' => data_get($settings, 'header.hamburger.dropDown.fontSize') ])
-    @style([ 'property' => 'color', 'value' => data_get($settings, 'header.hamburger.dropDown.fontColor') ])
-    @style([ 'property' => 'padding-top', 'value' => data_get($settings, 'header.hamburger.dropDown.spacing') ])
-    @style([ 'property' => 'padding-bottom', 'value' => data_get($settings, 'header.hamburger.dropDown.spacing') ])
-    @style([ 'property' => 'padding-left', 'value' => data_get($settings, 'header.hamburger.dropDown.indent') ])
-    @style([ 'property' => 'text-transform', 'value' => data_get($settings, 'header.hamburger.dropDown.textTransform') ])
+    @style([ 'property' => 'font-size', 'value' => data_get($settings, 'header.hamburgerMenu.dropDownItems.fontSize') ])
+    @style([ 'property' => 'color', 'value' => data_get($settings, 'header.hamburgerMenu.dropDownItems.fontColor') ])
+    @style([ 'property' => 'padding-top', 'value' => data_get($settings, 'header.hamburgerMenu.dropDownItems.spacing') ])
+    @style([ 'property' => 'padding-bottom', 'value' => data_get($settings, 'header.hamburgerMenu.dropDownItems.spacing') ])
+    @style([ 'property' => 'padding-left', 'value' => data_get($settings, 'header.hamburgerMenu.dropDownItems.indent') ])
+    @style([ 'property' => 'text-transform', 'value' => data_get($settings, 'header.hamburgerMenu.dropDownItems.textTransform') ])
 }
 
 header .logo .logo-link {

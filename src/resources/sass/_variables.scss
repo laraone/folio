@@ -1,35 +1,30 @@
 
 // Media query break points
-$large-devices:         1200px;
-$medium-devices:        992px;
-$small-devices:         768px;
-$extra-small-devices:   576px;
+$largeDevices:         1200px;
+$mediumDevices:        992px;
+$smallDevices:         768px;
+$extraSmallDevices:   576px;
 
 // Font
-$body-font-family: Nunito, sans-serif;
-$body-text-color: #333;
-$body-font-size: 16px;
+$bodyFontFamily: Nunito, sans-serif;
+$bodyTextColor: #333;
+$bodyFontSize: 16px;
 
 // Container
-$container-width: 85%;
-$container-max-width: 1500px;
+$containerWidth: 85%;
+$containerMaxWidth: 1500px;
 
 // Mobile Header
-$mobile-header-bg: #333;
-$mobile-header-color: #888;
+$mobileHeaderBg: #333;
+$mobileHeaderColor: #888;
 
 // Logo
-$logo-text-color: #444;
-$logo-text-size: 32px;
-
-// Tagline
-$tagline-text-color: #333;
-$tagline-font-size: 14px;
+$logoTextColor: #444;
+$logoTextSize: 32px;
 
 // Navigation Menu
-$menu-text-color: #444;
-$menu-item-text-hover-color: #111;
-$menu-item-font-size: 14px;
-$menu-item-text-transform: uppercase;
-$menu-dropdown-item-padding: 5px 0 5px 20px;
-$menu-dropdown-item-text-transform: none;
+$menuTextColor: #444;
+$menuItemTextHoverColor: #111;
+$menuItemFontSize: 14px;
+$menuItemTextTransform: uppercase;
+$menuDropdownItemTextTransform: none;

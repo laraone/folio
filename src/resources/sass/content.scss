@@ -99,16 +99,16 @@
     height: 350px;
     background-size: cover;
     background-position: center;
-    @media (max-width: $large-devices) {
+    @media (max-width: $largeDevices) {
         height: 300px;
     }
-    @media (max-width: $medium-devices) {
+    @media (max-width: $mediumDevices) {
         height: 265px;
     }
-    @media (max-width: $small-devices) {
+    @media (max-width: $smallDevices) {
         height: 230px;
     }
-    @media (max-width: $extra-small-devices) {
+    @media (max-width: $extraSmallDevices) {
         height: 200px;
     }
 // .index-post-title {
@@ -130,16 +130,16 @@
 
 .masonry-brick {
     padding: 5px;
-    @media (max-width: $large-devices) {
+    @media (max-width: $largeDevices) {
         height: 300px;
     }
-    @media (max-width: $medium-devices) {
+    @media (max-width: $mediumDevices) {
         height: 265px;
     }
-    @media (max-width: $small-devices) {
+    @media (max-width: $smallDevices) {
         height: 230px;
     }
-    @media (max-width: $extra-small-devices) {
+    @media (max-width: $extraSmallDevices) {
         height: 200px;
     }
     flex: auto;

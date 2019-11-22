@@ -1,4 +1,4 @@
-<header>
+<header id="header">
     <div class="logo">
         @if(get_theme_setting('header.logo.logotype') == 'text')
             <a class="logo-link" href="{{ url('/') }}">
@@ -12,7 +12,7 @@
     </div>
 
     <div class="hamburger-button-wrapper">
-        <button id="hamburger-button" class="hamburger hamburger--collapse" type="button">
+        <button id="hamburger-btn" onClick="Lara.hamburgerToggle(this.id)" class="hamburger hamburger--collapse" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
@@ -31,11 +31,10 @@
                         @if($item->url)
                             <a href="/{{ $item->url }}">{{ $item->title }}</a>
                         @else
-                            <a id="open-menu-{{ $item->id }}">{{ $item->title }}</a>
+                            <span id="dropdown-menu-{{ $item->id }}" onclick="Lara.dropDownMenuToggle(this.id)">{{ $item->title }}</span>
                         @endif
                         @if($item->subItems->count())
-                            <i class="dropdown-button-open fas fa-plus-circle"></i>
-                            <i class="dropdown-button-close fas fa-minus-circle"></i>
+                            <i id="dropdown-btn-{{ $item->id }}" onclick="Lara.dropDownMenuToggle('dropdown-menu-{{ $item->id }}')" class="{{ get_theme_setting('header.hamburgerMenu.dropDownButtons.openIcon') }} dropdown-visible"></i>
                         @endif
                     @endif
 
@@ -59,9 +58,7 @@
 
             <div class="menu-item dropdown">
                 <a href="#" id="open-menu-1">Dropdown</a>
-                <i class="dropdown-button-open fas fa-plus-circle"></i>
-                <i class="dropdown-button-close fas fa-minus-circle"></i>
-
+                <i id="dropdown-btn-1" onclick="Lara.dropDownMenuToggle(this.id)" class="{{ get_theme_setting('header.hamburgerMenu.dropDownButtons.openIcon') }} dropdown-visible"></i>
                 <div class="dropdown-content">
                     <div class="drop-menu-item"><a href="/posts">Example 1</a></div>
                     <div class="drop-menu-item"><a href="/posts">Example 2</a></div>
